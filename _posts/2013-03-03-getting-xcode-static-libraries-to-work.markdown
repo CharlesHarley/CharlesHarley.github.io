@@ -2,11 +2,6 @@
 layout: post
 published: true
 title: Getting Xcode static libraries to work
-excerpt: Getting Xcode static library dependencies to work is way harder than it should
-  be! This weekend I setup a new Xcode OS X workspace with 2 child projects. One project
-  was the app and the other a static library used by the app. Setting the static library
-  as a dependency of the app project took ages. Part of the reason was my lack of
-  knowledge but Xcode should really give a bit more help.
 category: programming
 tags: xcode
 comments: []

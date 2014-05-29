@@ -2,9 +2,6 @@
 layout: post
 published: true
 title: Disabling Android TextView suggestions
-excerpt: Android TextViews provide suggestions to the user as they type. Although
-  the user can disable this feature in the system settings there are cases where the
-  developer wants to always have suggestions disabled for certain TextViews.
 category: programming
 tags: android mobile
 comments: []

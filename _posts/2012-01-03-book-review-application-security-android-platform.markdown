@@ -2,8 +2,6 @@
 layout: post
 published: true
 title: ! 'Book review: Application Security for the Android Platform'
-excerpt: ! 'Just finished reading ''Application Security for the Android Platform:
-  Processes, Permissions, and Other Safeguards'' by Jeff Six.'
 category: programming
 tags: android review security book
 comments: []
