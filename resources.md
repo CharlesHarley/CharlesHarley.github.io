@@ -8,3 +8,4 @@ Articles, videos and web sites that I've found the most inspirational and inform
 
 - [Clean Coders](http://cleancoders.com/ "Clean Coders") videos by Robert C Martin AKA Uncle Bob - Brilliant series designed to help you be a better software engineer. Well worth the cost. Your future self will thank you!
 - [On Being a Senior Engineer](http://www.kitchensoap.com/2012/10/25/on-being-a-senior-engineer/ "On Being a Senior Engineer") - Insightful article about what it means to be a senior engineer.
+- [Technical debt 101](https://medium.com/@joaomilho/festina-lente-e29070811b84) - Brilliant explanation of technical debt. I highly recommend this if you're a non-technical manager.
