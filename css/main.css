@@ -320,17 +320,14 @@ a:visited { color: #205caa; }
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
 
 .highlight pre code * {
-  // This sets all children inside to nowrap
   white-space: nowrap;
 }
 
 .highlight pre {
-  // This sets the scrolling in x
   overflow-x: auto;
 }
 
 .highlight pre code {
-  // Forces <code> to respect <pre> formatting
   white-space: pre;
 }
 
