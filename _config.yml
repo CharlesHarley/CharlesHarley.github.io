@@ -9,3 +9,6 @@ timezone: Europe/London
 # Build settings
 markdown: kramdown
 permalink: /:year/:categories/:title
+
+kramdown:
+  input: GFM

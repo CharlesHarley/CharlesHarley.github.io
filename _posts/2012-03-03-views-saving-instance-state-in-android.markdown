@@ -39,7 +39,7 @@ Compound views contain one or more child views and if an activity contains multi
 
 To make it easier to understand I've created an [example project](https://github.com/CharlesHarley/Example-Android-SavingInstanceState) that defines a compound view that correctly saves and restores the state of its child views. The project contains various files to make the application work but if you want to skip to the important bit take a look at the [LockCombinationPicker](https://github.com/CharlesHarley/Example-Android-SavingInstanceState/blob/master/src/com/example/android/savinginstancestate/views/LockCombinationPicker.java) class. It contains 4 overridden methods that ensure the state of the child views are correctly saved and restored.
 
-{% highlight java %}
+```java
 @Override
 protected Parcelable onSaveInstanceState() {
     Parcelable superState = super.onSaveInstanceState();
@@ -65,7 +65,7 @@ protected void dispatchSaveInstanceState(SparseArray container) {
 protected void dispatchRestoreInstanceState(SparseArray container) {
     super.dispatchThawSelfOnly(container);
 }
-{% endhighlight %}
+```
 
 LockCombinationPicker saves and restores the state of its children by overriding View.onSaveInstanceState() and View.onRestoreInstanceState() much as you would expect. In addition to this we need to ensure the compound view's children aren't then called to save their state as well. We do this by overriding View.dispatchSaveInstanceState() and View.dispatchRestoreInstanceState() and calling [ViewGroup.dispatchFreezeSelfOnly()](http://developer.android.com/reference/android/view/ViewGroup.html#dispatchFreezeSelfOnly(android.util.SparseArray<android.os.Parcelable>)) and [ViewGroup.dispatchThawSelfOnly()](http://developer.android.com/reference/android/view/ViewGroup.html#dispatchThawSelfOnly(android.util.SparseArray<android.os.Parcelable>)) respectively. These methods ensure that View.onSaveInstanceState() and View.onRestoreInstanceState() are called on the compound view class and not on the child views.
 

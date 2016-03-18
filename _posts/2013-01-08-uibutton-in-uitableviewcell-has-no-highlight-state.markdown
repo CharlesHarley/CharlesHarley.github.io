@@ -13,7 +13,7 @@ Table view cells are displayed using a UITableView which is a subclass of UIScro
 
 We can remove the delay by setting `UIScrollView.delaysContentTouches = NO`. A side effect of this change is that scroll gestures cannot start from the buttons. Depending on how big your buttons are this might not be ideal. The work around for this is to override the `(BOOL)touchesShouldCancelInContentView:(UIView *)view` method in your UITableView subclass like so:
 
-{% highlight objective-c %}
+```objective-c
 - (BOOL)touchesShouldCancelInContentView:(UIView *)view {
     // Because we set delaysContentTouches = NO, we return YES for UIButtons
     // so that scrolling works correctly when the scroll gesture
@@ -24,4 +24,4 @@ We can remove the delay by setting `UIScrollView.delaysContentTouches = NO`. A s
 
     return [super touchesShouldCancelInContentView:view];
 }
-{% endhighlight %}
+```

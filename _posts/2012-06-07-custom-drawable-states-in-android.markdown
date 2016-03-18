@@ -21,14 +21,14 @@ The recommended implementation for a screen like this would be to use a [ListVie
 
 The custom state is declared in the 'attrs.xml' file in the application's 'res/values' directory.
 
-{% highlight xml %}
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="MessageState">
         <attr name="state_message_unread" format="boolean"/>
     </declare-styleable>
 </resources>
-{% endhighlight %}
+```
 
 ## Step 2: use the custom state in the state list drawables
 
@@ -36,7 +36,7 @@ In the message list example there are two state list drawables.
 
 One for the list item background:
 
-{% highlight xml %}
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:example="http://schemas.android.com/apk/res/com.charlesharley.example.android.customdrawablestates"
@@ -54,11 +54,11 @@ One for the list item background:
           android:drawable="@color/message_list_item_background_unread"
           />
 </selector>
-{% endhighlight %}
+```
 
 And one for the message status icon:
 
-{% highlight xml %}
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:example="http://schemas.android.com/apk/res/com.charlesharley.example.android.customdrawablestates"
@@ -69,7 +69,7 @@ And one for the message status icon:
           />
     <item android:drawable="@drawable/message_read_status_read" />
 </selector>
-{% endhighlight %}
+```
 
 To use the custom state all you need to do is declare a new XML namespace using your application's package name and prefix the custom state attribute with the new namespace.
 
@@ -79,7 +79,7 @@ Each view provides a number of existing states that can be used by its drawables
 
 In the message list example, the relative layout that contains the image view and the text view is a custom implementation that maintains an unread state, which when set, updates the view's drawable states resulting in the different look for read and unread messages.
 
-{% highlight java %}
+```java
 public class MessageListItemView extends RelativeLayout {
 
     private static final int[] STATE_MESSAGE_UNREAD = {R.attr.state_message_unread};
@@ -113,7 +113,7 @@ public class MessageListItemView extends RelativeLayout {
     }
 
 }
-{% endhighlight %}
+```
 
 What about the message status image view? Good question! Because the image view is a child of our custom view we tell it to duplicate its parent state using [View.setDuplicateParentStateEnabled()](http://developer.android.com/reference/android/view/View.html#setDuplicateParentStateEnabled(boolean)). Any state in the parent is passed down to the children including custom states. Brilliant!
 
