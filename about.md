@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I am a software engineer currently working in the Android/iOS mobile space for [Kotikan](http://kotikan.com "Kotikan") in Edinburgh, Scotland.
+I am a software engineer working for [Float](http://floatapp.com "Float") in Edinburgh, Scotland.
 
 - [Linked In](http://uk.linkedin.com/in/charlesharley)
 - [Twitter](http://twitter.com/charlesharley)
