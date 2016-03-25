@@ -11,6 +11,9 @@
   min-height: 100vh;
 }
 
-.page-content {
+.site-wrap {
   flex: 1;
+  max-width: 42em;
+  margin: auto;
+  padding: 1em;
 }

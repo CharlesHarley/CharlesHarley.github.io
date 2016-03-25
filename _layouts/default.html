@@ -5,11 +5,13 @@
 
 <body class="site">
 
-  {% include header.html nav=site.data.nav %}
+  <div class="site-wrap">
+    {% include header.html nav=site.data.nav %}
 
-  <main class="page-content">
-    {{ content }}
-  </main>
+    <main class="page-content">
+      {{ content }}
+    </main>
+  </div>
 
   {% include footer.html %}
 
