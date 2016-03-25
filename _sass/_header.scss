@@ -1,0 +1,21 @@
+.site-header {
+  @include display(flex);
+  @include flex-direction(column);
+  @include justify-content(center);
+}
+
+@media (min-width: 32em) {
+  .site-header {
+    @include display(flex);
+    @include flex-direction(row);
+    @include justify-content(space-between);
+  }
+}
+
+.site-title {
+  text-align: center;
+}
+
+.site-nav {
+  text-align: center;
+}

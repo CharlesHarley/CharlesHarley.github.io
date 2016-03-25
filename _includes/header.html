@@ -1,6 +1,6 @@
-<header>
-  <a href="{{ site.baseurl }}/">{{ site.title }}</a>
-  <nav>
+<header class="site-header">
+  <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+  <nav class="site-nav">
     {% for item in include.nav %}
       <a href="{{ item.url | prepend: site.baseurl }}">{{ item.text }}</a>
     {% endfor %}
