@@ -5,6 +5,7 @@ description: ""
 baseurl: ""
 url: "http://charlesharley.com"
 timezone: Europe/London
+username: charlesharley
 
 # Build settings
 markdown: kramdown
