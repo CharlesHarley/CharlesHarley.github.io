@@ -9,6 +9,7 @@ username: charlesharley
 
 # Build settings
 markdown: kramdown
+include: ['_pages']
 permalink: /:year/:categories/:title
 
 kramdown:
