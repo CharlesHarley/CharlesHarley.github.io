@@ -8,6 +8,4 @@ I am a software engineer working for [Float](http://floatapp.com "Float") in Edi
 
 - [Linked In](http://uk.linkedin.com/in/charlesharley)
 - [Twitter](http://twitter.com/charlesharley)
-- [Google](http://google.com/+CharlesHarley)
 - [GitHub](https://github.com/CharlesHarley)
-- [Flickr](http://www.flickr.com/photos/charlesharley/)
