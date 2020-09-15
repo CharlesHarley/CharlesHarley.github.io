@@ -40,6 +40,7 @@ module.exports = {
         new ManifestPlugin({
             fileName: '../../_data/manifest.yml',
             publicPath: './assets/styles/',
+            filter: (file) => file.name !== 'main.js',
         }),
         new FileManagerPlugin({
             onEnd: {
