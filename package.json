@@ -1,0 +1,21 @@
+{
+    "private": true,
+    "scripts": {
+        "prod": "NODE_ENV=production npx webpack",
+        "dev": "NODE_ENV=development npx webpack --watch"
+    },
+    "devDependencies": {
+        "autoprefixer": "^9.8.6",
+        "clean-webpack-plugin": "^3.0.0",
+        "css-loader": "^4.3.0",
+        "cssnano": "^4.1.10",
+        "filemanager-webpack-plugin": "^2.0.5",
+        "mini-css-extract-plugin": "^0.11.2",
+        "postcss": "^7.0.32",
+        "postcss-loader": "^4.0.1",
+        "tailwindcss": "^1.8.10",
+        "webpack": "^4.44.1",
+        "webpack-cli": "^3.3.12",
+        "webpack-manifest-plugin": "^2.2.0"
+    }
+}

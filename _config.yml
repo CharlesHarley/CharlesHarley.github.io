@@ -14,3 +14,9 @@ permalink: /:year/:categories/:title
 
 kramdown:
   input: GFM
+
+exclude:
+  - *.config.js
+  - package*.json
+  - _styles/
+  - node_modules/
