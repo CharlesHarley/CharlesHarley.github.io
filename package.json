@@ -5,6 +5,7 @@
         "dev": "NODE_ENV=development npx webpack --watch"
     },
     "devDependencies": {
+        "@fullhuman/postcss-purgecss": "^2.3.0",
         "autoprefixer": "^9.8.6",
         "clean-webpack-plugin": "^3.0.0",
         "css-loader": "^4.3.0",
