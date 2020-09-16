@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
 
-  {% include head.html %}
+{% include head.html %}
 
-    <body>
+<body class="flex flex-col h-screen">
 
-    {% include header.html %}
+  {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrap">
+  <div class="flex-grow bg-gray-500">
+    <div class="max-w-screen-lg md:mx-auto bg-blue-500">
       {{ content }}
-      </div>
     </div>
+  </div>
 
-    {% include footer.html %}
+  {% include footer.html %}
 
-    </body>
+</body>
+
 </html>
