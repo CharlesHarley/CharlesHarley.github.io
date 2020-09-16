@@ -11,7 +11,7 @@ module.exports = {
         main: path.resolve(__dirname, './_styles/main.css'),
     },
     output: {
-        path: path.resolve(__dirname, './assets/styles/'),
+        path: path.resolve(__dirname, './styles/'),
         filename: isProduction ? '[name].[hash].js' : '[name].js',
         chunkFilename: isProduction ? '[id].[hash].js' : '[id].js',
     },
@@ -38,15 +38,15 @@ module.exports = {
             filename: isProduction ? '[name].[hash].css' : '[name].css'
         }),
         new ManifestPlugin({
-            fileName: '../../_data/manifest.yml',
-            publicPath: './assets/styles/',
+            fileName: '../_data/manifest.yml',
+            publicPath: './styles/',
             filter: (file) => file.name !== 'main.js',
         }),
         new FileManagerPlugin({
             onEnd: {
                 delete: [
                     // Deleting the JS file as we're only interested in the CSS file.
-                    './assets/styles/main.js',
+                    './styles/main.js',
                 ],
             }
         }),
