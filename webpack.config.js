@@ -46,7 +46,7 @@ module.exports = {
             onEnd: {
                 delete: [
                     // Deleting the JS file as we're only interested in the CSS file.
-                    './styles/main.js',
+                    './styles/main*.js',
                 ],
             }
         }),
