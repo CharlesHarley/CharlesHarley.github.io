@@ -1,7 +1,12 @@
-<div class="bg-gray-900">
+<div class="border-b border-gray-600">
 
-  <header class="max-w-screen-lg h-12 md:mx-auto bg-red-500">
-    <span>Header</span>
+  <header class="flex max-w-screen-lg h-12 md:mx-auto p-2 justify-between items-center">
+    <div><a href="{{ site.baseurl }}/">{{ site.title }}</a></div>
+    <div class="space-x-3">
+      {% for item in site.data.header_nav_items %}
+      <a href="{{ item.url }}">{{ item.text }}</a>
+      {% endfor %}
+    </div>
   </header>
 
 </div>
